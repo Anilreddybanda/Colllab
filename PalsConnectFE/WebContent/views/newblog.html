@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Create Blog</title>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+
+	<link rel="stylesheet" href="resources/materialize/css/materialize.min.css"/> 
+	<script src="resources/materialize/js/materialize.min.js"/></script>
+  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<style>
+
+h2
+{
+color:white;
+font-family: sans-serif;
+font-style:italic;
+}
+
+body
+{
+background: url('images/WEB.png') center center fixed no-repeat;
+background-size:cover;
+}
+
+.input-field label {
+     color: white;
+   }
+
+   .input-field input[type=text]:focus + label {
+     color: white;
+   }
+   
+   .input-field input[type=textarea1]:focus + label {
+     color: white;
+   }
+
+</style>
+</head>
+<body>
+<div class="container center-align">
+<form >
+    <div class="row ">
+    <div class="col  l10 s12 m6 offset-m2 offset-l3">
+    <h2 class="center-align"> Post your article</h2>
+     					 
+	<div class="input-field col s12">
+	<input type="text"  ng-model=blogPost.title id="title" placeholder=" Blog Title" style="border: 1px solid white;
+     box-shadow: 0 1px 0 0 white; background-color:white;">
+	</div>
+		<div class="input-field col s12">
+			<textarea ng-model=blogPost.body  class="materialize-textarea black-text" placeholder=" Blog Content" style="border: 1px solid white;
+     box-shadow: 0 1px 0 0 white; background-color:white;"></textarea>
+						
+		</div>
+		<p  class="center-align">
+ <input class="btn btn-medium waves-effect waves-light red center-text" id="button" type="submit" value="Post Blog" name="action" ng-click="newblog()"></input>
+	</p>
+					</div>
+					</div>
+					</form>
+					
+					
+</div>
+<script>
+					
+$('#textarea1').val(''); 
+$('#textarea1').trigger('autoresize');
+$(document).ready(function() {
+    Materialize.updateTextFields();
+  });
+					
+</script>
+					  <script src="resources/materialize/js/jquery-3.1.1.min.js"/></script>
+					
+					
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Careers</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+
+	<link rel="stylesheet" href="resources/materialize/css/materialize.min.css"/> 
+	<script src="resources/materialize/js/materialize.min.js"/></script>
+  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+  <style>
+  body{
+		background: url(images/WEB.png) center center fixed no-repeat;
+		background-size:cover;
+		
+	}
+ p
+ {
+ padding-top:10px;
+    font-family:Trebuchet;
+ }
+ 
+ 
+  
+  </style>
+  
+  
+  
+  
+</head>
+<body>
+
+
+
+<div ng-repeat="j in jobs">
+
+<div class="container">
+<div class="row">
+        <div class="col l8 s12 m9 offset-l4 offset-m2 center-align">
+          <div class="card  white hoverable">
+            <div class="card-content black-text">
+              <span class="card-title" style="font-weight:400px;">{{j.title}}</span>
+              <div class="divider"></div>
+              <p class="black-text">JOB DESCRIPTION : {{j.description}}<br>
+              SKILLS REQUIRED : {{j.skillsrequired}}<br>
+              SALARY : {{j.salary}}<br>
+              LOCATION : {{j.location}}<br>
+              POSTED ON : {{j.postedon | date:'MM/dd/yyyy'}}<br>
+              </p>
+            </div>
+            <div class="card-action">
+              <a class="waves-effect waves-light btn  indigo lighten-1" href="" ng-click="applied(j.id)">APPLY</a>
+            </div>
+          </div>
+        </div>
+      </div>
+            
+         
+ </div>        
+         
+ </div>        <script src="resources/materialize/js/jquery-3.1.1.min.js"/></script>
+             
+              
+   
+</body>
+</html>

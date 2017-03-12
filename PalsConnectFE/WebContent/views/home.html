@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Home</title>
+	<link rel="stylesheet" href="resources/materialize/css/materialize.min.css"/> 
+
+<style>
+body
+{
+background: url('images/Facebook-friends1.jpg') center center fixed no-repeat;
+background-size: cover;
+margin-left:20px;
+
+
+}
+
+h2
+{
+color:#0277bd;
+font-family:pypyrus;
+font-style:italic;
+margin-top:100px;
+}
+
+h4,h5
+{
+
+color:white;
+}
+
+
+</style>
+</head>
+<body>
+  
+ 
+ <div class="container-fluid center-align "  id="p">
+ <h2>Welcome To PalsConnect</h2>
+  <h4 ><strong> Share, Connect, Create, Inspire</strong></h4>
+  
+ <h5 ng-hide="currentUser.id">Create account...Connect with friends..</h5>
+ 	
+ 	<a href="#/register" ng-hide="currentUser.id" class="btn-md btn btn-primary">Sign Up</a>
+ </div>
+
+</body>
+</html>
